@@ -8,7 +8,9 @@
  使用方法看方法说明，可以定制返回的数据格式，模型数据需要自己手动添加模型
  
 
-# use
+# 使用方法
+下载工程之后 复制DLHAddressBookManager 文件夹到工程中，然后引用头文件进行使用
+
 [AddManager getAddressBookData:^(NSArray * _Nullable addressBookArray, BOOL granted) {
         NSLog(@"%@",addressBookArray);
     } useCache:YES];
