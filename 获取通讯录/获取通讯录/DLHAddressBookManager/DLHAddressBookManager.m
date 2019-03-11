@@ -45,11 +45,11 @@ static DLHAddressBookManager *_instance = nil;
 }
 - (id)copyWithZone:(nullable NSZone *)zone
 {
-    return self;
+    return [DLHAddressBookManager shareInstance];
 }
 - (id)mutableCopyWithZone:(nullable NSZone *)zone
 {
-    return self;
+    return [DLHAddressBookManager shareInstance];
 }
 
 #pragma mark - ============== 设置默认参数 ================
