@@ -169,7 +169,7 @@ static DLHAddressBookManager *_instance = nil;
                 dispatch_async(queue, ^{
                     NSArray *data = [self getcacheAddressBookData];
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        completionHandler(useCache ? [self getcacheAddressBookData] : data,granted);
+                        completionHandler(useCache ? data : @[],granted);
                     });
                 });
             }
